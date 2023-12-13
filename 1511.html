@@ -1,0 +1,164 @@
+<!-- 
+    у документі:
+    створити айді main
+    вкласти айді header, body, footer
+    у header додати заголовок 1
+    у header додати параграф з класом heading
+    у body додати заголовок 1 і заголовок 2
+    у body додати 3 абзаци
+    у кожному абзаці виділити кілька слів тегом strong і em
+    у боді додати картину
+    у footer додати лінк з посиланням на гугл <a href="//google.com">google.com</a>
+
+    у стилях:
+    main -- зовнішній та внутрішній відступ 10, зелений бордер суцільний
+    header -- зовнішній відступ 20, внутнішній 10, синій бордер суцільний
+    header > h1 -- колір червоний
+    header > p.heading -- зовнішній відступ 0 0 30, вирівняти текст по центру text-align: center;
+    body -- зовнішній відступ 20, внутнішній 10, фіолетовий бордер суцільний
+    body > h1 -- колір зелений, зовнішній відступ знизу 30
+    body > h2 -- колір синій, зовнішній відступ знизу 50
+    body > p -- зовнішній відступ знизу 20
+    body strong -- колір оранжевий
+    body em -- колір салатовий
+    body img -- віріняни по центру, ширина 360
+    footer -- зовнішній відступ 20, внутнішній 10, чорний бордер суцільний
+    footer a -- червоний колір
+    footer a:hover -- cиній колір
+ -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>15-11-23</title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			#main {
+				padding: 10px;
+				margin: 10px;
+				border: solid rgb(25, 184, 25);
+			}
+			#header {
+				padding: 10px;
+				margin: 20px;
+				border: solid rgb(0, 17, 255);
+			}
+			#header > h1 {
+				color: rgb(255, 51, 0);
+			}
+			#header > p.heading {
+				margin: 0 0 30px;
+				text-align: center;
+			}
+			#bodi {
+				padding: 10px;
+				margin: 20px;
+				border: solid rgb(136, 18, 136);
+			}
+			#bodi > h1 {
+				color: rgb(127, 255, 127);
+				margin: 0 0 30px 0;
+			}
+			#bodi > h2 {
+				color: blue;
+				margin: 0 0 50px 0;
+			}
+			#bodi > p {
+				margin: 0 0 20px 0;
+			}
+			strong {
+				color: rgb(255, 153, 0);
+			}
+			em {
+				color: rgb(209, 50, 156);
+			}
+			img {
+				margin: auto;
+				display: block;
+				width: 300px;
+			}
+			#footer {
+				margin: 20px;
+				padding: 10px;
+				border: solid black;
+			}
+			#footer a {
+				color: red;
+			}
+			#footer a:hover {
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<div id="header">
+				<h1>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					Assumenda esse exercitationem in molestiae sunt dolores qui
+					voluptatibus consequuntur aperiam explicabo laborum
+					perspiciatis alias repellat dolorum animi aspernatur rem,
+					minima ut.
+				</h1>
+				<p class="heading">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Iusto vel, accusantium adipisci soluta voluptates asperiores
+					nobis atque quam temporibus porro ad magnam maiores eum
+					consectetur error molestias minus exercitationem quibusdam.
+				</p>
+			</div>
+			<div id="bodi">
+				<h1>
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+					Quam placeat, nulla odio consequuntur vel provident,
+					adipisci exercitationem quos dignissimos a veniam molestiae
+					tempora repellendus cum praesentium possimus nihil corrupti
+					iste.
+				</h1>
+				<h2>
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+					Quam placeat, nulla odio consequuntur vel provident,
+					adipisci exercitationem quos dignissimos a veniam molestiae
+					tempora repellendus cum praesentium possimus nihil corrupti
+					iste.
+				</h2>
+				<p>
+					Lorem ipsum <strong>dolor</strong>, sit amet consectetur
+					adipisicing elit. Sit culpa voluptas laudantium officia
+					accusantium nesciunt expedita animi? Distinctio
+					<em>beatae</em>
+					consectetur, facere voluptatum, cumque hic, nobis sunt
+					molestiae tenetur quasi pariatur.
+				</p>
+				<p>
+					Lorem ipsum <strong>dolor</strong>, sit amet consectetur
+					adipisicing elit. Sit culpa voluptas laudantium officia
+					accusantium nesciunt expedita animi? Distinctio
+					<em>beatae</em>
+					consectetur, facere voluptatum, cumque hic, nobis sunt
+					molestiae tenetur quasi pariatur.
+				</p>
+				<p>
+					Lorem ipsum <strong>dolor</strong>, sit amet consectetur
+					adipisicing elit. Sit culpa voluptas laudantium officia
+					accusantium nesciunt expedita animi? Distinctio
+					<em>beatae</em>
+					consectetur, facere voluptatum, cumque hic, nobis sunt
+					molestiae tenetur quasi pariatur.
+				</p>
+				<img
+					src="pictures/Знімок екрану_2023-09-08_20-45-13.png"
+					alt=""
+				/>
+			</div>
+			<div id="footer">
+				<a href="//google.com">link google.com</a>
+			</div>
+		</div>
+	</body>
+</html>

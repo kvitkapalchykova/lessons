@@ -1,0 +1,86 @@
+<!-- 
+
+у стилях:
+обнулити стилі
+додати font-size:20px до тегу strong
+додати font-weight:bold до тегу em
+додати колір жовтий, фон чорний до тегу span
+додати бордер до тегу div
+додати зовнішній та внутрішній відступ 10 для тегу div
+додати ширину 300, display:block, margin:auto для картинки
+додати внутрішній відступ знизу 20 для заголовка 1
+
+у документі:
+додати заголовок 1 і текст рибу
+додати дів і текст-рибу
+додати картинку з папки пікчерс
+
+у діві виділити перших 4 слова тегом strong
+у діві виділити 10 і 15 слово тегом em
+у діві виділити крайнє слово тегом span
+
+запустити лів-сервер
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			strong {
+				font-size: 20px;
+			}
+			em {
+				font-weight: bold;
+			}
+			span {
+				color: yellow;
+				background-color: black;
+			}
+			div {
+				/*
+                 border: 5px cyan double;
+                 */
+				border-color: cyan;
+				border-style: double;
+				border-width: 5px;
+
+				padding: 10px;
+				margin: 10px;
+			}
+			img {
+				width: 300px;
+				display: block;
+				margin: auto;
+			}
+			h1 {
+				padding: 0 0 20px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>
+			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet saepe
+			laudantium voluptatibus labore error laboriosam. Quibusdam molestiae
+			maiores tempore animi inventore delectus eaque, quos voluptas
+			laborum nulla illo! Fugiat, amet.
+		</h1>
+		<div>
+			<strong>Lorem ipsum dolor sit</strong> amet consectetur, adipisicing
+			elit. Facilis <em>voluptas</em> laboriosam aperiam repellat
+			blanditiis <em>suscipit</em> architecto, perferendis ullam beatae
+			tenetur illo consectetur incidunt omnis adipisci unde tempora quo
+			veniam <span>numquam</span>.
+		</div>
+		<img src="pictures/Знімок екрану_2023-09-08_20-45-13.png" alt="" />
+		на панщині пшеницю жала
+	</body>
+</html>
